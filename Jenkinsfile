@@ -12,10 +12,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                // sh '''
-                // cd myapp
-                // pip install -r requirements.txt
-                // '''
+                sh '''
+                cd myapp
+                pip install -r requirements.txt
+                '''
             }
         }
         stage('Test') {
